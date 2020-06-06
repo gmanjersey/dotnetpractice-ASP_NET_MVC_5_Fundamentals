@@ -1,0 +1,11 @@
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.dll
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.pdb
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.csproj.CoreCompileInputs.cache
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.dll
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.pdb
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.dll.config
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\EntityFramework.dll
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\EntityFramework.xml
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.csproj.CopyComplete

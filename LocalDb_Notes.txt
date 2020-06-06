@@ -1,0 +1,101 @@
+------------------------------1. Find the Developer Command Prompt for VS 2019.
+
+------------------------------2. Execute Sqllocaldb in the command window:
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise>Sqllocaldb
+Microsoft (R) SQL Server Express LocalDB Command Line Tool
+Version 13.0.1601.5
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Usage: SqlLocalDB operation [parameters...]
+
+Operations:
+
+  -?
+    Prints this information
+
+  create|c ["instance name" [version-number] [-s]]
+    Creates a new LocalDB instance with a specified name and version
+    If the [version-number] parameter is omitted, it defaults to the
+    latest LocalDB version installed in the system.
+    -s starts the new LocalDB instance after it's created
+
+  delete|d ["instance name"]
+    Deletes the LocalDB instance with the specified name
+
+  start|s ["instance name"]
+    Starts the LocalDB instance with the specified name
+
+  stop|p ["instance name" [-i|-k]]
+    Stops the LocalDB instance with the specified name,
+    after current queries finish
+    -i request LocalDB instance shutdown with NOWAIT option
+    -k kills LocalDB instance process without contacting it
+
+  share|h ["owner SID or account"] "private name" "shared name"
+    Shares the specified private instance using the specified shared name.
+    If the user SID or account name is omitted, it defaults to current user.
+
+  unshare|u ["shared name"]
+    Stops the sharing of the specified shared LocalDB instance.
+
+  info|i
+    Lists all existing LocalDB instances owned by the current user
+    and all shared LocalDB instances.
+
+  info|i "instance name"
+    Prints the information about the specified LocalDB instance.
+
+  versions|v
+    Lists all LocalDB versions installed on the computer.
+
+  trace|t on|off
+    Turns tracing on and off
+
+SqlLocalDB treats spaces as delimiters. It is necessary to surround
+instance names that contain spaces and special characters with quotes.
+For example:
+   SqlLocalDB create "My LocalDB Instance"
+
+The instance name can sometimes be omitted, as indicated above, or
+specified as "". In this case, the reference is to the default LocalDB
+instance "MSSQLLocalDB".
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise>
+
+
+--------------------------------3. sqllocaldb i
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise>sqllocaldb i
+MSSQLLocalDB
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise>
+
+
+--------------------------------4. Will use MSSQLLocalDB for development purposes.
+
+CD "C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc"
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise> cls
+
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc>sqllocaldb i mssqllocaldb
+Name:               MSSQLLocalDB
+Version:            13.1.4001.0
+Shared name:
+Owner:              DESKTOP-JR5PUS6\gmann
+Auto-create:        Yes
+State:              Stopped
+Last start time:    6/4/2020 10:26:01 AM
+Instance pipe name:
+
+C:\Leroy\SC\Git\dotnetpractice\ASP_NET_MVC_5_Fundamentals\OdeToFoodMvc>
+
+
+-------------------------------------5. In Visual Studio 2019 > Views > Sql Server Object  Explorer:
+
+Data Source=(localdb)\MSSQLLocalDB
+
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+
+--The physical master database files are at:
+C:\Users\<user>\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\v11.0  

@@ -1,0 +1,1 @@
+Web Api has a feature known as sontent negotiation that thries to fihure out what does the client want and serilize accordingly based on the Accept Headers.

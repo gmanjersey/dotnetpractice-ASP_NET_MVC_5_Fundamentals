@@ -1,0 +1,21 @@
+@-------Note that the Windows SubSystem for Linux must be instaleld on a Widows computer to use curl:
+
+Microsoft Windows [Version 10.0.19041.264]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\gmann>curl
+curl: try 'curl --help' for more information
+
+C:\Users\gmann>curl https://localhost:44336/api/restaurants
+[{"Id":1,"Name":"Leroy's Pizza","Cuisine":1},{"Id":3,"Name":"Mango Grove","Cuisine":2},{"Id":2,"Name":"Tersiguels","Cuisine":3}]
+C:\Users\gmann>curl https://localhost:44336/api/restaurants - H "Accept: application/json"
+curl: option -: is unknown
+curl: try 'curl --help' for more information
+
+C:\Users\gmann>curl https://localhost:44336/api/restaurants -H "Accept: application/json"
+[{"Id":1,"Name":"Leroy's Pizza","Cuisine":1},{"Id":3,"Name":"Mango Grove","Cuisine":2},{"Id":2,"Name":"Tersiguels","Cuisine":3}]
+C:\Users\gmann>curl https://localhost:44336/api/restaurants -H "Accept: application/xml"
+<ArrayOfRestaurant xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/OdeToFood.Data.Models"><Restaurant><Cuisine>Italian</Cuisine><Id>1</Id><Name>Leroy's Pizza</Name></Restaurant><Restaurant><Cuisine>Indian</Cuisine><Id>3</Id><Name>Mango Grove</Name></Restaurant><Restaurant><Cuisine>French</Cuisine><Id>2</Id><Name>Tersiguels</Name></Restaurant></ArrayOfRestaurant>
+C:\Users\gmann>
+
+

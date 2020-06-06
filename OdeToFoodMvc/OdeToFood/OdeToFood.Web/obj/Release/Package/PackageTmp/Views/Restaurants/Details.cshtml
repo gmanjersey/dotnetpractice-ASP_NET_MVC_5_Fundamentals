@@ -1,0 +1,36 @@
+﻿@model OdeToFood.Data.Models.Restaurant
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<!--<h2>Details for  @Model.Name</h2>-->
+<!--DisplayFor gives us more flexibility - with annotations on the model that can impact the rendering of the property, we calso format dates, decimal ect.-->
+
+<h2>Details  for @Html.DisplayFor( model => model.Name) </h2>
+
+<div>
+    <h4>Restaurant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuisine) <!--Added manually since the Scaffoling does not auto generate Enum properties.-->
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cuisine)  <!--Added manually since the Scaffoling does not auto generate Enum properties.-->
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
